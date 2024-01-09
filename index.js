@@ -166,7 +166,7 @@ let words = [
     " underground parking lot"
   ],
   [
-    ". END OF PART "
+    ". END OF THIS GOOFY STORY. WRITTEN BY THE GOOFY BOT STORY WRITING COUNCIL + EXECUTIVE PRODUCER TAKIS. CHAPTER 2"
   ]
 ];
 
@@ -183,26 +183,12 @@ let sendStoryTimer = setInterval(function() {
 }, 10000);
 
 function newGoofyStory() {
-
   console.log("Goofy story has been shared with the world.");
-
-  /*if (ciqlJson.open("stats.json").data.goofystoriestold + 1 > 10000) {
-    return "Hi everyone, the goofy story writing association is taking a little break before season 2, so stay hyped! Shoutout to mrlilgoofy and wet takis!";
-  } else if (ciqlJson.open("stats.json").data.goofystoriestold + 1 == 10000) {
-    ciqlJson.open("stats.json")
-      .set("goofystoriestold", ciqlJson.open("stats.json").data.goofystoriestold + 1)
-      .save();
-    return "10000th GOOFY STORY SPECIAL: so i was on my way to the goofy ice cream parlour when my goofy goober uncle drove into me with his goofy 16 wheel automobile so i threw a goofy pickle at the windshield but then a goofy little hampster tried to bite me so i went to the SHADOW GOVERNMENT HEADQUARTERS and ordered the immediate arrests of 150 goofy journalists. goofy senators and lawmakers are plotting the economic downfall of goofy america. fight back. fight back. goofy. fight back. fight back against the goofy undermining of a healthy and stable economy. modern ingsoc. I LOVE FAT MEN. END OF PART 10000 OF THE GOOFY STORIES. TO BE CONTINUED?..?.";
-  } else {*/
   let sentence = "";
   for (let i = 0; i < words.length; i++) {
     const word = words[i][Math.floor(Math.random() * words[i].length)];
     sentence = sentence.concat(word);
   }
-  ciqlJson.open("stats.json")
-    .set("goofystoriestold", ciqlJson.open("stats.json").data.goofystoriestold + 1)
-    .save();
-  sentence = sentence.concat(ciqlJson.open("stats.json").data.goofystoriestold + " OF THE GOOFY STORIES. TO BE CONTINUED?..?.");
   return sentence;
   //}
 }
