@@ -225,12 +225,11 @@ client.on('ready', async () => {
   console.log(`GoofyBot is now online successfully!`);
   client.user.setActivity("Writing Goofy Stories");
   await client.guilds.cache
-    .get("1163086461415993354")
+    .get("1186413724588855448")
     .commands.set(cmds);
 });
 
 
 // Bot Login
-console.log(process.env['DISCORD_BOT_SECRET']);
-client.login(process.env['DISCORD_BOT_SECRET']);
+client.login(process.env['bot_token']);
 keepAlive();
