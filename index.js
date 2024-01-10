@@ -100,7 +100,7 @@ let words = [
     " killed my grandpa",
     " started to run",
     " microwaved a porcupine",
-    " increased my goofy power by a factor of " + (Math.round(Math.random * 10))
+    " increased my goofy power greatly")
   ],
   [
     " and then a"
