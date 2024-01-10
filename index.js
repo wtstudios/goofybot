@@ -176,7 +176,7 @@ let timer = 0;
 
 let sendStoryTimer = setInterval(function() {
   timer++;
-  if (timer > 6) {
+  if (timer > 30) {
     client.channels.cache.get('1186413724588855451').send(newGoofyStory());
     timer = 0;
   }
