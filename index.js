@@ -100,7 +100,7 @@ let words = [
     " killed my grandpa",
     " started to run",
     " microwaved a porcupine",
-    " increased my goofy power greatly")
+    " increased my goofy power greatly"
   ],
   [
     " and then a"
