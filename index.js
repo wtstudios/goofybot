@@ -187,7 +187,8 @@ function newGoofyStory() {
   let sentence = "";
   for (let i = 0; i < words.length; i++) {
     const word = words[i][Math.floor(Math.random() * words[i].length)];
-    sentence = sentence.concat(word);
+    console.log(word);
+    sentence = sentence + word;
   }
   return sentence;
   //}
